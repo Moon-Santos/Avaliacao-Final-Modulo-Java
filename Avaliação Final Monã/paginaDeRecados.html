@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Recados</title>
+    <link rel="stylesheet" href="./css/styleRecados.css" />
+  </head>
+  <body>
+    <main id="container">
+      <section id="secao-cima">
+        <section id="small"></section>
+        <h1 id="titulo">MEUS RECADOS</h1>
+        <form action="" id="formulario-recados">
+          <input
+            type="text"
+            maxlength="40"
+            id="input-descricao"
+            placeholder="Descrição (Max: 40 caracteres)"
+          />
+          <input
+            type="text"
+            maxlength="60"
+            id="input-detalhamento"
+            placeholder="Detalhes (Max: 60 caracteres)"
+          />
+          <button type="submit" id="input-salvar" value="SALVAR">
+            SALVAR RECADO
+          </button>
+        </form>
+      </section>
+      <section id="entrada-mensagens">
+        <table id="tabelaMensagens"></table>
+      </section>
+    </main>
+    <script src="./js/paginaDeRecados.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  background-image: url('../images/pexels-efecan-efe-7900689.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+}
+#inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+input::placeholder {
+  color: rgb(23, 18, 68);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputs > input {
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 10px 5px 5px black;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  background-color: rgb(241, 242, 245);
+}
+#inputs > input:focus {
+  border: none;
+  outline: none;
+}
+
+#input-username,
+#input-password {
+  margin-right: 5px;
+}
+
+#entrar-sistema {
+  background-color: rgba(0, 45, 87, 0.9);
+  border-radius: 5px;
+  color: rgb(241, 242, 245);
+  padding: 10px;
+  font-size: 30px;
+  box-shadow: 10px 5px 5px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+i {
+  margin-top: 12px;
+  color: rgb(0, 0, 0);
+}
+
+#botao-entrar {
+  width: 20rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(56, 153, 245, 0.9);
+  color: rgb(224, 226, 235);
+  box-shadow: 10px 5px 5px black;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botao-criar-conta {
+  width: 20rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(56, 153, 245, 0.9);
+  color: rgb(224, 226, 235);
+  box-shadow: 10px 5px 5px black;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#criar-conta {
+  background: none;
+  border: none;
+  color: rgb(241, 242, 245);
+  margin-top: 10px;
+}
+
+#botao-entrar:hover,
+#botao-criar-conta:hover {
+  background-color: rgba(96, 170, 240, 0.9);
+  transform: scale(1.1) perspective(1px);
+  cursor: pointer;
+}
+#criar-conta:hover {
+  transform: scale(1.1) perspective(1px);
+}
